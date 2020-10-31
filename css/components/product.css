@@ -3,14 +3,13 @@
         @apply grid;
         @apply grid-cols-1;
         @apply gap-4;
-        @apply px-4;
+        @apply p-4;
 
         .product {
-            @apply my-4;
             @apply border-gray-100;
             @apply flex;
             @apply flex-col;
-
+            @apply rounded-none;
 
             &__image {
                 @apply rounded-lg;
@@ -35,12 +34,12 @@
                 @apply mb-1;
                 @apply tracking-tight;
                 @apply font-semibold;
-                @apply text-gray-900;
+                @apply text-secundary;
             }
 
             &__description {
                 @apply text-gray-700;
-                @apply leading-snug;
+                @apply leading-tight;
             }
 
             &__price {
@@ -52,7 +51,7 @@
 
             &__quality {
                 @apply text-xs;
-                @apply text-yellow-700;
+                @apply text-gold;
                 @apply leading-tight;
             }
         }
@@ -66,17 +65,16 @@
 
             .product {
                 @apply flex-row;
+                @apply shadow-lg;
+                @apply rounded-lg;
 
                 &__image {
-                    @apply rounded-none;
-                    @apply rounded-l-lg;
+                    @apply rounded-r-none;
                 }
 
                 &__content {
-                    @apply mt-0;
-                    @apply ml-0;
-                    @apply rounded-none;
-                    @apply rounded-r-lg;
+                    @apply m-0;
+                    @apply rounded-l-none;
                     @apply shadow-none;
                 }
 
