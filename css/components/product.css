@@ -1,0 +1,109 @@
+@layer components {
+    .products {
+        @apply grid;
+        @apply grid-cols-1;
+        @apply gap-4;
+        @apply px-4;
+
+        .product {
+            @apply my-4;
+            @apply border-gray-100;
+            @apply flex;
+            @apply flex-col;
+
+
+            &__image {
+                @apply rounded-lg;
+                @apply w-full;
+                @apply h-full;
+            }
+
+            &__content {
+                @apply bg-white;
+                @apply p-2;
+                @apply rounded-lg;
+                @apply mx-1;
+                @apply -mt-8;
+                @apply relative;
+                @apply shadow-lg;
+            }
+
+            &__title {
+                @apply font-oswald;
+                @apply text-xl;
+                @apply uppercase;
+                @apply mb-1;
+                @apply tracking-tight;
+                @apply font-semibold;
+                @apply text-gray-900;
+            }
+
+            &__description {
+                @apply text-gray-700;
+                @apply leading-snug;
+            }
+
+            &__price {
+                @apply text-sm;
+                @apply font-semibold;
+                @apply text-gray-700;
+                @apply mt-2;
+            }
+
+            &__quality {
+                @apply text-xs;
+                @apply text-yellow-700;
+                @apply leading-tight;
+            }
+        }
+    }
+
+
+
+    @screen sm {
+        .products {
+            @apply grid-cols-2;
+
+            .product {
+                @apply flex-row;
+
+                &__image {
+                    @apply rounded-none;
+                    @apply rounded-l-lg;
+                }
+
+                &__content {
+                    @apply mt-0;
+                    @apply ml-0;
+                    @apply rounded-none;
+                    @apply rounded-r-lg;
+                    @apply shadow-none;
+                }
+
+                &__title {
+                    @apply text-lg;
+                }
+            }
+        }
+    }
+
+    @screen md {
+        .products {
+            @apply grid-cols-2;
+        }
+    }
+
+    @screen lg {
+        .products {
+            @apply grid-cols-3;
+
+            .product {
+                &__image {
+                    @apply object-cover;
+                    @apply w-48;
+                    @apply h-full;
+                }
+            }
+        }
+    }
+}

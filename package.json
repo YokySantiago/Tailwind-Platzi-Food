@@ -1,0 +1,23 @@
+{
+  "name": "tailwind",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "postcss css/tailwind.css -o public/css/style.css -w",
+    "start": "live-server public"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "autoprefixer": "^10.0.1",
+    "live-server": "^1.2.1",
+    "postcss": "^8.1.4",
+    "postcss-cli": "^8.1.0",
+    "postcss-import": "^13.0.0",
+    "postcss-nested": "^5.0.1",
+    "postcss-nesting": "^7.0.1",
+    "tailwindcss": "^1.9.6"
+  }
+}
