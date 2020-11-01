@@ -6,76 +6,47 @@
         @apply p-4;
 
         .product {
-            @apply border-gray-100;
-            @apply flex;
-            @apply flex-col;
-            @apply rounded-none;
+            @apply border-gray-100 flex flex-col rounded-none;
 
             &__image {
-                @apply rounded-lg;
-                @apply w-full;
-                @apply h-full;
+                @apply rounded-lg w-full h-full;
             }
 
             &__content {
-                @apply bg-white;
-                @apply p-2;
-                @apply rounded-lg;
-                @apply mx-1;
-                @apply -mt-8;
-                @apply relative;
-                @apply shadow-lg;
+                @apply bg-white p-2 rounded-lg mx-1 -mt-8 relative shadow-lg;
             }
 
             &__title {
-                @apply font-oswald;
-                @apply text-xl;
-                @apply uppercase;
-                @apply mb-1;
-                @apply tracking-tight;
-                @apply font-semibold;
-                @apply text-secundary;
+                @apply font-oswald text-xl uppercase mb-1 tracking-tight font-semibold text-secundary;
             }
 
             &__description {
-                @apply text-gray-700;
-                @apply leading-tight;
+                @apply text-gray-700 leading-tight;
             }
 
             &__price {
-                @apply text-sm;
-                @apply font-semibold;
-                @apply text-gray-700;
-                @apply mt-2;
+                @apply text-sm font-semibold text-gray-700 mt-2;
             }
 
             &__quality {
-                @apply text-xs;
-                @apply text-gold;
-                @apply leading-tight;
+                @apply text-xs text-gold leading-tight;
             }
         }
     }
-
-
 
     @screen sm {
         .products {
             @apply grid-cols-2;
 
             .product {
-                @apply flex-row;
-                @apply shadow-lg;
-                @apply rounded-lg;
+                @apply flex-row shadow-lg rounded-lg;
 
                 &__image {
                     @apply rounded-r-none;
                 }
 
                 &__content {
-                    @apply m-0;
-                    @apply rounded-l-none;
-                    @apply shadow-none;
+                    @apply m-0 rounded-l-none shadow-none;
                 }
 
                 &__title {
@@ -97,9 +68,7 @@
 
             .product {
                 &__image {
-                    @apply object-cover;
-                    @apply w-48;
-                    @apply h-full;
+                    @apply object-cover w-48 h-full;
                 }
             }
         }

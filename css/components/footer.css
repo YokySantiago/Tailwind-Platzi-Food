@@ -1,0 +1,35 @@
+@layer components {
+    .footer {
+        @apply bg-secundary w-screen text-white py-2;
+
+        &__networks {
+            @apply flex items-center justify-center text-xl my-2;
+        }
+
+        &__options {
+            @apply my-2 text-center;
+        }
+        
+        &__option {
+            @apply cursor-pointer;
+
+            &:hover {
+                @apply text-primary;
+            }
+        }
+    }
+
+    @screen sm {
+        .footer {
+            @apply grid grid-cols-3;
+
+            &__networks {
+                @apply col-start-3;
+            }
+
+            &__options {
+                @apply flex flex-row justify-around items-center col-start-1 col-span-2 row-start-1;
+            }
+        }
+    }
+}

@@ -1,0 +1,17 @@
+@layer components {
+    .social-network {
+        @apply mr-2 rounded-full border border-white w-8 h-8 text-center cursor-pointer;
+
+        &:hover&--facebook {
+            @apply border-blue-600 text-blue-600;
+        }
+
+        &:hover&--twitter {
+            @apply border-blue-300 text-blue-300;
+        }
+
+        &:hover&--instagram {
+            @apply border-red-500 text-red-500;
+        }
+    }
+}

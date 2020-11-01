@@ -1,0 +1,13 @@
+@layer components {
+    .header {
+        @apply bg-secundary flex flex-row justify-between text-white items-center px-2 py-2;
+
+        &__logo img {
+            @apply h-8;
+        }
+
+        &_menu {
+            @apply text-4xl;
+        }
+    }
+}

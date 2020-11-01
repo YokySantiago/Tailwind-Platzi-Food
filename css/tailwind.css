@@ -4,6 +4,9 @@
 @import './components/components.css';
 @import './components/product.css';
 @import './components/alert.css';
+@import './components/footer.css';
+@import './components/header.css';
+@import './components/social-network.css';
 
 @import './utilities/utilities.css';
 @import './utilities/general.css';
