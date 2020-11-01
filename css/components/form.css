@@ -1,0 +1,33 @@
+@layer components {
+    .form {
+        &__input {
+            @apply bg-gray-200 border w-full py-2 px-4 rounded-sm border-gray-400 text-secundary mb-2 outline-none;
+
+            &:active {
+                @apply border-info;
+            }
+
+            &:focus {
+                @apply border-info;
+            }
+        }
+
+        &__buttons {
+            @apply flex flex-row justify-end;
+        }
+    }
+
+
+
+    .btn {
+        @apply bg-info rounded-sm px-4 py-2 text-white ml-2;
+
+        &--cancel {
+            @apply bg-secundary bg-opacity-75 text-white;
+        }
+
+        &:active {
+            @apply opacity-75;
+        }
+    }
+}

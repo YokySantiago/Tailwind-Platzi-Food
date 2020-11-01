@@ -1,28 +1,30 @@
-.alert {
-    @apply w-32;
-    @apply border;
-    @apply px-4;
-    @apply py-1;
-    @apply my-4;
-    @apply rounded-lg;
-    @apply border-black;
-    @apply bg-black;
-    @apply bg-opacity-50;
-    @apply border-opacity-50;
-    @apply text-black;
-    @apply font-light;
-}
+@layer components {
+    .alert {
+        @apply w-32;
+        @apply border;
+        @apply px-4;
+        @apply py-1;
+        @apply my-4;
+        @apply rounded-lg;
+        @apply border-black;
+        @apply bg-black;
+        @apply bg-opacity-50;
+        @apply border-opacity-50;
+        @apply text-black;
+        @apply font-light;
+    }
 
-.alert-success {
-    @apply bg-green-400;
-    @apply text-green-900;
-    @apply bg-opacity-50;
-    @apply border-opacity-50;
-}
+    .alert-success {
+        @apply bg-green-400;
+        @apply text-green-900;
+        @apply bg-opacity-50;
+        @apply border-opacity-50;
+    }
 
-.alert-info {
-    @apply bg-blue-300;
-    @apply text-blue-900;
-    @apply bg-opacity-50;
-    @apply border-opacity-50;
+    .alert-info {
+        @apply bg-blue-300;
+        @apply text-blue-900;
+        @apply bg-opacity-50;
+        @apply border-opacity-50;
+    }
 }

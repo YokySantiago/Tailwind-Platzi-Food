@@ -9,11 +9,11 @@
             @apply border-gray-100 flex flex-col rounded-none;
 
             &__image {
-                @apply rounded-lg w-full h-full;
+                @apply rounded-sm w-full h-full;
             }
 
             &__content {
-                @apply bg-white p-2 rounded-lg mx-1 -mt-8 relative shadow-lg;
+                @apply bg-white p-2 rounded-sm mx-1 -mt-8 relative shadow-lg;
             }
 
             &__title {
@@ -25,11 +25,15 @@
             }
 
             &__price {
-                @apply text-sm font-semibold text-gray-700 mt-2;
+                @apply text-sm font-semibold text-white mt-2;
+
+                span {
+                    @apply bg-success py-1 px-2 rounded-2xl;
+                }
             }
 
             &__quality {
-                @apply text-xs text-gold leading-tight;
+                @apply text-xs text-gold leading-tight mt-1;
             }
         }
     }
@@ -39,7 +43,7 @@
             @apply grid-cols-2;
 
             .product {
-                @apply flex-row shadow-lg rounded-lg;
+                @apply flex-row shadow-lg rounded-sm;
 
                 &__image {
                     @apply rounded-r-none;
