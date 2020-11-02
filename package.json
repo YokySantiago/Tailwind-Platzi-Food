@@ -11,6 +11,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@fullhuman/postcss-purgecss": "^3.0.0",
     "autoprefixer": "^10.0.1",
     "live-server": "^1.2.1",
     "postcss": "^8.1.4",
@@ -19,5 +20,8 @@
     "postcss-nested": "^5.0.1",
     "postcss-nesting": "^7.0.1",
     "tailwindcss": "^1.9.6"
+  },
+  "devDependencies": {
+    "cssnano": "^4.1.10"
   }
 }

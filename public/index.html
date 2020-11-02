@@ -13,7 +13,7 @@
         <div class="header__logo">
             <img src="img/logo-w.svg" alt="Logo">
         </div>
-        <div class="header__menu">&equiv;</div>
+        <div class="header__menu"><i class="fa fa-bars" aria-hidden="true"></i></div>
     </header>
 
     <main class="bg-gray-200">
@@ -23,9 +23,13 @@
                 <p class="inline font-semibold text-2xl sm:text-3xl tracking-tight">Disfruta de nuestros <span class="text-primary inline">Productos</span></p>
                 <p class="font-light text-2xl hidden sm:block">Tenemos una gran variedad de hamburguesas disponibles para ti</p>
                 <p class="font-normal text-2xl text-primary hidden sm:block">No esperes <span class="text-white inline font-light">más</span></p>
-                <p class="text-2xl sm:text-4xl absolute bottom-0 pb-8 w-full text-center text-opacity-75 font-bold">&xvee;</p>
+                <p class="text-2xl sm:text-4xl absolute bottom-0 pb-8 w-full text-center text-opacity-25"><i class="fa fa-angle-down" aria-hidden="true"></i></p>
             </div>
         </div>
+        <section class="flex flex-col items-center py-4">
+            <img src="img/undraw_cooking_lyxy.svg" alt="Cooking" class="h-24"/>
+            <p class="uppercase font-oswald inline font-semibold text-2xl sm:text-3xl tracking-tight">Ordena <span class="text-primary inline">ahora</span></p>
+        </section>
         <section class="products container mx-auto">
             <div class="product">
                 <div>
@@ -145,11 +149,15 @@
                 </div>
             </div>
         </section>
-        <section class="mt-8 bg-cover bg-center relative" style="background-image: url(https://images.unsplash.com/photo-1516387938699-a93567ec168e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1951&q=80);">
-            <div class="absolute bg-secundary bg-opacity-50 top-0 bottom-0 w-screen z-10"></div>
+        <section class="mt-8 bg-white">
             <div class="p-4 grid grid-cols-1 sm:grid-cols-3 relative z-20">
                 <div class="col-start-2">
-                    <p class="text-primary text-center font-semibold text-2xl sm:text-3xl tracking-tight py-4">Contáctenos</p>
+                    <div class="flex flex-row justify-center items-center">
+                        <img src="img/undraw_Mail_sent_re_0ofv.svg" alt="Logo" class="h-8 inline mr-2">
+                        <p class="text-primary text-center font-semibold text-2xl sm:text-3xl tracking-tight py-4 inline">
+                            Contáctenos
+                        </p>
+                    </div>
                     <form>
                         <input type="text" name="name" id="name" placeholder="¿Cómo te llamas?" class="form__input"/>
     
