@@ -1,192 +1,307 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Header</title>
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body class="font-oswald">
     <header class="header">
-        <div class="header__logo">
-            <img src="img/logo-w.svg" alt="Logo">
-        </div>
-        <div class="header__menu"><i class="fa fa-bars" aria-hidden="true"></i></div>
+      <div class="header__logo">
+        <img src="img/logo-w.svg" alt="Logo" />
+      </div>
+      <div class="header__menu">
+        <i class="fa fa-bars" aria-hidden="true"></i>
+      </div>
     </header>
 
     <main class="bg-gray-200">
-        <div style="background-image: url(https://images.unsplash.com/photo-1514933651103-005eec06c04b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1867&q=80);"
-            class="h-56 sm:h-80 md:h-100 bg-cover bg-no-repeat bg-center relative z-0">
-            <div class="text-white uppercase font-oswald text-center absolute top-0 bottom-0 w-full flex flex-col justify-center bg-secundary bg-opacity-75">
-                <p class="inline font-semibold text-2xl sm:text-3xl tracking-tight">Disfruta de nuestros <span class="text-primary inline">Productos</span></p>
-                <p class="font-light text-2xl hidden sm:block">Tenemos una gran variedad de hamburguesas disponibles para ti</p>
-                <p class="font-normal text-2xl text-primary hidden sm:block">No esperes <span class="text-white inline font-light">más</span></p>
-                <p class="text-2xl sm:text-4xl absolute bottom-0 pb-8 w-full text-center text-opacity-25"><i class="fa fa-angle-down" aria-hidden="true"></i></p>
-            </div>
+      <div
+        style="
+          background-image: url(https://images.unsplash.com/photo-1514933651103-005eec06c04b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1867&q=80);
+        "
+        class="h-56 sm:h-80 md:h-100 bg-cover bg-no-repeat bg-center relative z-0"
+      >
+        <div
+          class="text-white uppercase font-oswald text-center absolute top-0 bottom-0 w-full flex flex-col justify-center bg-secundary bg-opacity-75"
+        >
+          <p class="inline font-semibold text-2xl sm:text-3xl tracking-tight">
+            Disfruta de nuestros
+            <span class="text-primary inline">Productos</span>
+          </p>
+          <p class="font-light text-2xl hidden sm:block">
+            Tenemos una gran variedad de hamburguesas disponibles para ti
+          </p>
+          <p class="font-normal text-2xl text-primary hidden sm:block">
+            No esperes <span class="text-white inline font-light">más</span>
+          </p>
+          <p
+            class="text-2xl sm:text-4xl absolute bottom-0 pb-8 w-full text-center text-opacity-25"
+          >
+            <i class="fa fa-angle-down" aria-hidden="true"></i>
+          </p>
         </div>
-        <section class="flex flex-col items-center py-4">
-            <img src="img/undraw_cooking_lyxy.svg" alt="Cooking" class="h-24"/>
-            <p class="uppercase font-oswald inline font-semibold text-2xl sm:text-3xl tracking-tight">Ordena <span class="text-primary inline">ahora</span></p>
-        </section>
-        <section class="products container mx-auto">
-            <div class="product">
-                <div>
-                    <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&h=500&q=80" 
-                        alt="Burger" class="product__image"
-                        />
-                </div>
-                <div class="product__content">
-                    <h2 class="product__title">Haburguesa con queso</h2>
-                    <p class="product__description">Hamburguesa con queso y aderezo de chipotle</p>
-                    <div class="product__price"><span>COP 17.000</span></div>
-                    <div class="product__quality">&starf;&starf;&starf;&starf;&star; / 36 Reseñas</div>
-                </div>
+      </div>
+      <section class="flex flex-col items-center py-4">
+        <img src="img/undraw_cooking_lyxy.svg" alt="Cooking" class="h-24" />
+        <p
+          class="uppercase font-oswald inline font-semibold text-2xl sm:text-3xl tracking-tight"
+        >
+          Ordena <span class="text-primary inline">ahora</span>
+        </p>
+      </section>
+      <section class="products container mx-auto">
+        <div class="product">
+          <div>
+            <img
+              src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&h=500&q=80"
+              alt="Burger"
+              class="product__image"
+            />
+          </div>
+          <div class="product__content">
+            <h2 class="product__title">Haburguesa con queso</h2>
+            <p class="product__description">
+              Hamburguesa con queso y aderezo de chipotle
+            </p>
+            <div class="product__price"><span>COP 17.000</span></div>
+            <div class="product__quality">
+              &starf;&starf;&starf;&starf;&star; / 36 Reseñas
             </div>
-            <div class="product">
-                <div>
-                    <img src="https://images.unsplash.com/photo-1508736793122-f516e3ba5569?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2848&q=80&w=500&h=500" 
-                        alt="Burger" class="product__image"
-                        />
-                </div>
-                <div class="product__content">
-                    <h2 class="product__title">Haburguesa artesanal</h2>
-                    <p class="product__description">Hamburguesa con queso y aderezo de chipotle</p>
-                    <div class="product__price"><span>COP 25.000</span></div>
-                    <div class="product__quality">&starf;&starf;&starf;&starf;&star; / 36 Reseñas</div>
-                </div>
+          </div>
+        </div>
+        <div class="product">
+          <div>
+            <img
+              src="https://images.unsplash.com/photo-1508736793122-f516e3ba5569?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2848&q=80&w=500&h=500"
+              alt="Burger"
+              class="product__image"
+            />
+          </div>
+          <div class="product__content">
+            <h2 class="product__title">Haburguesa artesanal</h2>
+            <p class="product__description">
+              Hamburguesa con queso y aderezo de chipotle
+            </p>
+            <div class="product__price"><span>COP 25.000</span></div>
+            <div class="product__quality">
+              &starf;&starf;&starf;&starf;&star; / 36 Reseñas
             </div>
-            <div class="product">
-                <div>
-                    <img src="https://images.unsplash.com/photo-1584178639036-613ba57e5e39?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80&w=500&h=500" 
-                        alt="Burger" class="product__image"
-                        />
-                </div>
-                <div class="product__content">
-                    <h2 class="product__title">Haburguesa de la casa</h2>
-                    <p class="product__description">Hamburguesa con queso y aderezo de chipotle</p>
-                    <div class="product__price"><span>COP 18.000</span></div>
-                    <div class="product__quality">&starf;&starf;&starf;&starf;&star; / 36 Reseñas</div>
-                </div>
+          </div>
+        </div>
+        <div class="product">
+          <div>
+            <img
+              src="https://images.unsplash.com/photo-1584178639036-613ba57e5e39?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80&w=500&h=500"
+              alt="Burger"
+              class="product__image"
+            />
+          </div>
+          <div class="product__content">
+            <h2 class="product__title">Haburguesa de la casa</h2>
+            <p class="product__description">
+              Hamburguesa con queso y aderezo de chipotle
+            </p>
+            <div class="product__price"><span>COP 18.000</span></div>
+            <div class="product__quality">
+              &starf;&starf;&starf;&starf;&star; / 36 Reseñas
             </div>
-            <div class="product">
-                <div>
-                    <img src="https://images.unsplash.com/photo-1426869981800-95ebf51ce900?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80&w=500&h=500" 
-                        alt="Burger" class="product__image"
-                        />
-                </div>
-                <div class="product__content">
-                    <h2 class="product__title">Pollo apanado completo</h2>
-                    <p class="product__description">Hamburguesa con queso y aderezo de chipotle</p>
-                    <div class="product__price"><span>COP 35.000</span></div>
-                    <div class="product__quality">&starf;&starf;&starf;&starf;&star; / 36 Reseñas</div>
-                </div>
+          </div>
+        </div>
+        <div class="product">
+          <div>
+            <img
+              src="https://images.unsplash.com/photo-1426869981800-95ebf51ce900?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80&w=500&h=500"
+              alt="Burger"
+              class="product__image"
+            />
+          </div>
+          <div class="product__content">
+            <h2 class="product__title">Pollo apanado completo</h2>
+            <p class="product__description">
+              Hamburguesa con queso y aderezo de chipotle
+            </p>
+            <div class="product__price"><span>COP 35.000</span></div>
+            <div class="product__quality">
+              &starf;&starf;&starf;&starf;&star; / 36 Reseñas
             </div>
-            <div class="product">
-                <div>
-                    <img src="https://images.unsplash.com/photo-1530805948738-95aa20739233?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80&w=500&h=500" 
-                        alt="Burger" class="product__image"
-                        />
-                </div>
-                <div class="product__content">
-                    <h2 class="product__title">Papas fritas</h2>
-                    <p class="product__description">Hamburguesa con queso y aderezo de chipotle</p>
-                    <div class="product__price"><span>COP 5.000</span></div>
-                    <div class="product__quality">&starf;&starf;&starf;&starf;&star; / 36 Reseñas</div>
-                </div>
+          </div>
+        </div>
+        <div class="product">
+          <div>
+            <img
+              src="https://images.unsplash.com/photo-1530805948738-95aa20739233?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80&w=500&h=500"
+              alt="Burger"
+              class="product__image"
+            />
+          </div>
+          <div class="product__content">
+            <h2 class="product__title">Papas fritas</h2>
+            <p class="product__description">
+              Hamburguesa con queso y aderezo de chipotle
+            </p>
+            <div class="product__price"><span>COP 5.000</span></div>
+            <div class="product__quality">
+              &starf;&starf;&starf;&starf;&star; / 36 Reseñas
             </div>
-            <div class="product">
-                <div>
-                    <img src="https://images.unsplash.com/photo-1515875976234-9d59c3ef288d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80&w=500&h=500" 
-                        alt="Burger" class="product__image"
-                        />
-                </div>
-                <div class="product__content">
-                    <h2 class="product__title">Perro caliente sencillo</h2>
-                    <p class="product__description">Hamburguesa con queso y aderezo de chipotle</p>
-                    <div class="product__price"><span>COP 7.000</span></div>
-                    <div class="product__quality">&starf;&starf;&starf;&starf;&star; / 36 Reseñas</div>
-                </div>
+          </div>
+        </div>
+        <div class="product">
+          <div>
+            <img
+              src="https://images.unsplash.com/photo-1515875976234-9d59c3ef288d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80&w=500&h=500"
+              alt="Burger"
+              class="product__image"
+            />
+          </div>
+          <div class="product__content">
+            <h2 class="product__title">Perro caliente sencillo</h2>
+            <p class="product__description">
+              Hamburguesa con queso y aderezo de chipotle
+            </p>
+            <div class="product__price"><span>COP 7.000</span></div>
+            <div class="product__quality">
+              &starf;&starf;&starf;&starf;&star; / 36 Reseñas
             </div>
-            <div class="product">
-                <div>
-                    <img src="https://images.unsplash.com/photo-1594179047513-b4199480fe9d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80&w=500&h=500" 
-                        alt="Burger" class="product__image"
-                        />
-                </div>
-                <div class="product__content">
-                    <h2 class="product__title">Pizza artesanal</h2>
-                    <p class="product__description">Hamburguesa con queso y aderezo de chipotle</p>
-                    <div class="product__price"><span>COP 15.000</span></div>
-                    <div class="product__quality">&starf;&starf;&starf;&starf;&star; / 36 Reseñas</div>
-                </div>
+          </div>
+        </div>
+        <div class="product">
+          <div>
+            <img
+              src="https://images.unsplash.com/photo-1594179047513-b4199480fe9d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80&w=500&h=500"
+              alt="Burger"
+              class="product__image"
+            />
+          </div>
+          <div class="product__content">
+            <h2 class="product__title">Pizza artesanal</h2>
+            <p class="product__description">
+              Hamburguesa con queso y aderezo de chipotle
+            </p>
+            <div class="product__price"><span>COP 15.000</span></div>
+            <div class="product__quality">
+              &starf;&starf;&starf;&starf;&star; / 36 Reseñas
             </div>
-            <div class="product">
-                <div>
-                    <img src="https://images.unsplash.com/photo-1508736793122-f516e3ba5569?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2848&q=80&w=500&h=500" 
-                        alt="Burger" class="product__image"
-                        />
-                </div>
-                <div class="product__content">
-                    <h2 class="product__title">Haburguesa con queso</h2>
-                    <p class="product__description">Hamburguesa con queso y aderezo de chipotle</p>
-                    <div class="product__price"><span>COP 15.000</span></div>
-                    <div class="product__quality">&starf;&starf;&starf;&starf;&star; / 36 Reseñas</div>
-                </div>
+          </div>
+        </div>
+        <div class="product">
+          <div>
+            <img
+              src="https://images.unsplash.com/photo-1508736793122-f516e3ba5569?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2848&q=80&w=500&h=500"
+              alt="Burger"
+              class="product__image"
+            />
+          </div>
+          <div class="product__content">
+            <h2 class="product__title">Haburguesa con queso</h2>
+            <p class="product__description">
+              Hamburguesa con queso y aderezo de chipotle
+            </p>
+            <div class="product__price"><span>COP 15.000</span></div>
+            <div class="product__quality">
+              &starf;&starf;&starf;&starf;&star; / 36 Reseñas
             </div>
-            <div class="product">
-                <div>
-                    <img src="https://images.unsplash.com/photo-1584178639036-613ba57e5e39?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80&w=500&h=500" 
-                        alt="Burger" class="product__image"
-                        />
-                </div>
-                <div class="product__content">
-                    <h2 class="product__title">Haburguesa con queso</h2>
-                    <p class="product__description">Hamburguesa con queso y aderezo de chipotle</p>
-                    <div class="product__price"><span>COP 15.000</span></div>
-                    <div class="product__quality">&starf;&starf;&starf;&starf;&star; / 36 Reseñas</div>
-                </div>
+          </div>
+        </div>
+        <div class="product">
+          <div>
+            <img
+              src="https://images.unsplash.com/photo-1584178639036-613ba57e5e39?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80&w=500&h=500"
+              alt="Burger"
+              class="product__image"
+            />
+          </div>
+          <div class="product__content">
+            <h2 class="product__title">Haburguesa con queso</h2>
+            <p class="product__description">
+              Hamburguesa con queso y aderezo de chipotle
+            </p>
+            <div class="product__price"><span>COP 15.000</span></div>
+            <div class="product__quality">
+              &starf;&starf;&starf;&starf;&star; / 36 Reseñas
             </div>
-        </section>
-        <section class="mt-8 bg-white">
-            <div class="p-4 grid grid-cols-1 sm:grid-cols-3 relative z-20">
-                <div class="col-start-2">
-                    <div class="flex flex-row justify-center items-center">
-                        <img src="img/undraw_Mail_sent_re_0ofv.svg" alt="Logo" class="h-8 inline mr-2">
-                        <p class="text-primary text-center font-semibold text-2xl sm:text-3xl tracking-tight py-4 inline">
-                            Contáctenos
-                        </p>
-                    </div>
-                    <form>
-                        <input type="text" name="name" id="name" placeholder="¿Cómo te llamas?" class="form__input"/>
-    
-                        <input type="email" name="email" id="email" placeholder="¿Cómo es tu correo electrónico?" class="form__input"/>
-    
-                        <textarea name="description" id="description" placeholder="¿Cómo te podemos ayudar?" rows="6" class="form__input"></textarea>
-    
-                        <div class="form__buttons">
-                            <button type="reset" class="btn btn--cancel">Cancelar</button>
-                            <button type="submit" class="btn">Enviar</button>
-                        </div>
-                    </form>
-                </div>
+          </div>
+        </div>
+      </section>
+      <section class="mt-8 bg-white">
+        <div class="p-4 grid grid-cols-1 sm:grid-cols-3 relative z-20">
+          <div class="col-start-2">
+            <div class="flex flex-row justify-center items-center">
+              <img
+                src="img/undraw_Mail_sent_re_0ofv.svg"
+                alt="Logo"
+                class="h-8 inline mr-2"
+              />
+              <p
+                class="text-primary text-center font-semibold text-2xl sm:text-3xl tracking-tight py-4 inline"
+              >
+                Contáctenos
+              </p>
             </div>
-        </section>
+            <form>
+              <input
+                type="text"
+                name="name"
+                id="name"
+                placeholder="¿Cómo te llamas?"
+                class="form__input"
+              />
+
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="¿Cómo es tu correo electrónico?"
+                class="form__input"
+              />
+
+              <textarea
+                name="description"
+                id="description"
+                placeholder="¿Cómo te podemos ayudar?"
+                rows="6"
+                class="form__input"
+              ></textarea>
+
+              <div class="form__buttons">
+                <button type="reset" class="btn btn--cancel">Cancelar</button>
+                <button type="submit" class="btn">Enviar</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
     </main>
 
     <footer class="footer">
-        <div class="footer__networks">
-            <div class="social-network social-network--facebook"><i class="fa fa-facebook"></i></div>
-            <div class="social-network social-network--twitter"><i class="fa fa-twitter"></i></div>
-            <div class="social-network social-network--instagram"><i class="fa fa-instagram"></i></div>
+      <div class="footer__networks">
+        <div class="social-network social-network--facebook">
+          <i class="fa fa-facebook"></i>
         </div>
-        <ul class="footer__options">
-            <li class="footer__option">Soporte</li>
-            <li class="footer__option">Acerca de</li>
-            <li class="footer__option">Registro</li>
-            <li class="footer__option">Aviso de privacidad</li>
-        </ul>
+        <div class="social-network social-network--twitter">
+          <i class="fa fa-twitter"></i>
+        </div>
+        <div class="social-network social-network--instagram">
+          <i class="fa fa-instagram"></i>
+        </div>
+      </div>
+      <ul class="footer__options">
+        <li class="footer__option">Soporte</li>
+        <li class="footer__option">Acerca de</li>
+        <li class="footer__option">Registro</li>
+        <li class="footer__option">Aviso de privacidad</li>
+      </ul>
     </footer>
-</body>
+  </body>
 </html>
